@@ -1,0 +1,34 @@
+# Build directory
+[Bb]uild*/
+
+# Install directory
+[Ii]nstall*/
+
+# Project/editor files
+*.swp
+.idea/
+.vs/
+.vscode
+compile_commands.json
+CMakeLists.txt.user*
+
+# clangd cache
+.cache/
+
+# *nix related
+# Common convention for backup or temporary files
+*~
+
+# Visual Studio CMake settings
+CMakeSettings.json
+
+# OSX global filetypes
+# Created by Finder or Spotlight in directories for various OS functionality (indexing, etc)
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# Windows global filetypes
+Thumbs.db

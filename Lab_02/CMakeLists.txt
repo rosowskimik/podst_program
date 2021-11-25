@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.22)
+project(Lab_02)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(Lab_02_01 Lab_02_01.cpp)
+add_executable(Lab_02_02 Lab_02_02.cpp)
+add_executable(Lab_02_03 Lab_02_03.cpp)
+add_executable(Lab_02_04 Lab_02_04.cpp)
+add_executable(Lab_02_05 Lab_02_05.cpp)
+add_executable(Lab_02_06 Lab_02_06.cpp)
+add_executable(Lab_02_07 Lab_02_07.cpp)
+add_executable(Lab_02_08 Lab_02_08.cpp)
+add_executable(Lab_02_09 Lab_02_09.cpp)
+add_executable(Lab_02_10 Lab_02_10.cpp)
+add_executable(Lab_02_11 Lab_02_11.cpp)
