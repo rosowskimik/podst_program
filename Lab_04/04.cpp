@@ -1,12 +1,11 @@
 #include <iostream>
 
+#include "helpers.h"
+
 int main() {
     int size = -1;
 
-    do {
-        std::cout << "Podaj dodatnia dlugosc boku: ";
-        std::cin >> size;
-    } while (size < 1);
+    h::checked_input_to<int>(size, "Podaj dodatnia dlugosc boku: ", "Zla dlugosc boku\n", [](auto& s) { return s < 1; });
 
     for (int i = 1; i <= size; ++i) {
         std::cout << '*';
