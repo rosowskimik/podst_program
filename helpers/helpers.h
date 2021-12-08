@@ -7,10 +7,10 @@
 
 namespace h {
     template<typename T>
-    void checked_input_to(
+    void inline checked_input_to(
             T& target,
-            const std::string& input_text,
-            const std::string& error_text,
+            const char* input_text,
+            const char* error_text,
             const std::function<bool(const T&)>& is_wrong) {
         bool not_first = false;
         do {

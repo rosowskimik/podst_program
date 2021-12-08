@@ -1,0 +1,7 @@
+file(GLOB 05_FILES CONFIGURE_DEPENDS *.cpp)
+foreach(source ${05_FILES})
+  cmake_path(GET source FILENAME fileName)
+  cmake_path(GET fileName STEM fileStem)
+  add_executable("Lab_05_${fileStem}" ${fileName})
+  target_link_libraries("Lab_05_${fileStem}" PRIVATE helpers)
+endforeach()
