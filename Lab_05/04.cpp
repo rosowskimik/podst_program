@@ -8,7 +8,11 @@ int main() {
     int length = -1;
     float sum = 0.0;
 
-    h::checked_input_to<int>(length, "Podaj dlugosc zbioru: ", "Zbior moze zawiearac od 1 do 100 elementow\n", [](auto& v) { return v < 1 || v > 100; });
+    h::checked_input_to<int>(
+            length,
+            "Podaj dlugosc zbioru: ",
+            "Zbior moze zawiearac od 1 do 100 elementow\n",
+            [](auto& v) { return v < 1 || v > 100; });
 
     std::random_device rd;
     std::uniform_int_distribution<int> distr(0, 99);
