@@ -1,6 +1,1 @@
-file(GLOB 03_FILES CONFIGURE_DEPENDS *.cpp)
-foreach(source ${03_FILES})
-    cmake_path(GET source FILENAME fileName)
-    cmake_path(GET fileName STEM fileStem)
-    add_executable("Lab_03_${fileStem}" ${fileName})
-endforeach()
+create_targets(${LAB})
